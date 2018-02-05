@@ -3,11 +3,6 @@
 const PROMPT = require("readline-sync");
 const SPACER = "-----------------------------------------------";
 
-const MAIN_MENU_OPTIONS = [
-	["sort", "change sort order"],
-	["new", "add new movie"]
-];
-
 const MOVIE_ID_REGEX = /^[0-9]*$/;
 const MOVIE_RATING_REGEX = /^[0-5]$/;
 
@@ -100,7 +95,7 @@ function main() {
 	movies = [];
 
 	setSortOrder();
-	
+
 	while(1) {
 		console.log("\n\n");
 
