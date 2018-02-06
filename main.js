@@ -127,11 +127,10 @@ function main() {
 
 	while (true) {
 		calculateMovieAverage();
+		sortMovies();
 		showMovies();
 		showMainMenu();
 		askForMenuOption();
-
-		sortMovies();
 
 		console.log("\n\n");
 	}
